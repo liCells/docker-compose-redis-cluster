@@ -1,0 +1,74 @@
+version: '3.9'
+
+services:
+  redis-6001:
+    image: 'redis'
+    container_name: redis-6001
+    network_mode: "host"
+    command:
+      ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    volumes:
+      - ./conf/redis-6001.conf:/usr/local/etc/redis/redis.conf
+      - ./data/6001:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+  redis-6002:
+    image: 'redis'
+    container_name: redis-6002
+    network_mode: "host"
+    command:
+      ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    volumes:
+      - ./conf/redis-6002.conf:/usr/local/etc/redis/redis.conf
+      - ./data/6002:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+  redis-6003:
+    image: 'redis'
+    container_name: redis-6003
+    network_mode: "host"
+    command:
+      ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    volumes:
+      - ./conf/redis-6003.conf:/usr/local/etc/redis/redis.conf
+      - ./data/6003:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+  redis-6004:
+    image: 'redis'
+    container_name: redis-6004
+    network_mode: "host"
+    command:
+      ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    volumes:
+      - ./conf/redis-6004.conf:/usr/local/etc/redis/redis.conf
+      - ./data/6004:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+  redis-6005:
+    image: 'redis'
+    container_name: redis-6005
+    network_mode: "host"
+    command:
+      ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    volumes:
+      - ./conf/redis-6005.conf:/usr/local/etc/redis/redis.conf
+      - ./data/6005:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+  redis-6006:
+    image: 'redis'
+    container_name: redis-6006
+    network_mode: "host"
+    command:
+      ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    volumes:
+      - ./conf/redis-6006.conf:/usr/local/etc/redis/redis.conf
+      - ./data/6006:/data
+    environment:
+      - TZ=Asia/Shanghai

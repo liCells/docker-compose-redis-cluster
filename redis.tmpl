@@ -1,0 +1,26 @@
+port ${PORT}
+bind 0.0.0.0
+# 关闭保护模式
+protected-mode no
+
+# 打开集群
+cluster-enabled yes
+# 集群节点配置
+cluster-config-file nodes.conf
+# 集群节点超时
+cluster-node-timeout 10000
+# 集群节点端口
+cluster-announce-port ${PORT}
+# 集群节点总线端口
+cluster-announce-bus-port 1${PORT}
+# 集群节点 IP
+cluster-announce-ip 127.0.0.1
+cluster-announce-port ${PORT}
+cluster-announce-bus-port 1${PORT}
+
+# 混合持久化
+aof-use-rdb-preamble yes
+
+# password
+requirepass 1204
+masterauth 1204
