@@ -17,9 +17,9 @@
 
 ## 如何使用
 
-1. `git clone https://github.com/liCells/docker-compose-redis-cluster.git`
+1. 拉取项目, `git clone https://github.com/liCells/docker-compose-redis-cluster.git`
 2. `cd docker-compose-redis-cluster`
-3. `./build-conf.sh`
+3. 构建配置文件, `./build-conf.sh`
 4. `docker-compose up`或者`docker-compose up -d`
 5. 连接到任意一个 redis, 执行`redis-cli -a pass --cluster create [{IP}:{PORT}...] --cluster-replicas 1`, 然后根据提示进行操作即可.
 
