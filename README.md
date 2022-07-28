@@ -27,7 +27,16 @@
 - `cluster-replicas`可以理解为给每一个主服务创建一个副本.
 - `redis-cli`在容器的`/usr/local/bin`下
 
+#### 更换版本
+
+> 将 docker-compose.yml 中的 image 标签修改为所对应的版本即可, 根据对应版本修改配置文件路径
+
+redis 5.0 的配置文件位于`/etc/redis/redis.conf`
+
+redis 6.0/6.2.6/7.0/7.0.4 的配置文件位于`/usr/local/etc/redis/redis.conf`
+
 ### 参考文档
 
 - [redis cluster 官方文档](https://redis.io/docs/manual/scaling/)
 - [docker compose 官方文档](https://docs.docker.com/compose/)
+- [docker redis image](https://hub.docker.com/_/redis)
